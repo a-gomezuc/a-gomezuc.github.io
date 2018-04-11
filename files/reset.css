@@ -154,5 +154,8 @@ em, i {
 		text-decoration: underline;
 		-webkit-transition: all 1s;
 	}
-
+.icons{
+    text-align: center;
+    margin-left: 0.5%;
+}
 
