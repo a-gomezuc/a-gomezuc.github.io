@@ -1,138 +1,188 @@
 <!DOCTYPE html>
-<html lang="es">
+<html class="no-js">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#1e7bbf">
-    <meta name="description" content="Currículum web accesible de Alex Gómez Uceda - Accesible web curriculum by Alex Gómez Uceda">
-    <meta name="keywords" content="Currículo,Currículum,Informática,Software,Ingeniero,Ingeniería,Java,C,Angular,TypesCript,HTML,CSS,XML,JavaScript,Accesible,Web">
-    <meta name="author" content="Alex Gómez Uceda & Guillermo Navas García">
-
-    <title>Alex Gómez Uceda - Ingeniero del Software</title>
-
-
-    <!-- Ficheros CSS -->
-    <link rel="stylesheet" href="files/reset.css">
-    <link rel="stylesheet" media="screen and (max-width:480px)" href="files/mobile.css">
-    <link rel="stylesheet" media="screen and (min-width:481px)" href="files/cv.css">
-    <link rel="stylesheet" media="print" href="files/print.css">
-
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Alex Gómez Uceda</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Bootstrap and Font Awesome css-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- we use cdn but you can also include local files located in css directory-->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/font-awesome-animation.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <!-- Google fonts - Montserrat for headings, Cardo for copy-->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
+  <!-- onepage scroll stylesheet-->
+  <link rel="stylesheet" href="css/onepage-scroll.css">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="favicon.png">
+  <!-- Tweaks for older IEs-->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 
 <body>
-
-    <!-- Header -->
-    <header class="banner">
-        <div class="container_16">
-            <div class="subheading">
-                <h1>Alex Gómez Uceda</h1>
-                <h2>Ingeniero del software</h2>
+  <div class="wrapper">
+    <div class="main">
+      <!-- page 1-->
+      <section id="page1">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="container clearfix">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 col-sm-12">
+                <p class="italic">¡Bienvenido!</p>
+                <h1>Mi nombre es Alex Gómez Uceda.</h1>
+                <p class="italic">Este es mi portfolio.</p>
+                <p class="italic">Si quieres conocer más sobre mí, sigue bajando.</p>
+              </div>
             </div>
-
-            <figure>
-                <img src="files/avatar.jpg" title= "Alex Gómez Uceda" alt="Imagen de Alex Gómez Uceda">
-            </figure>
+          </div>
         </div>
-    </header>
-
-    <section role="main" class="container_16 clearfix">
-        <div class="grid_16">
-            <!-- Presentación -->
-            <div class="grid_8 apropos">
-                <h3>Presentación</h3>
-                <p>Soy una persona ambiciosa, trabajadora, paciente y familiar que entiende la vida como un continuo aprendizaje.
-                </p><p>Aficionado a todo tipo de tecnología y deporte.</p>
-                <img src="http://www.codigos-qr.com/qr/php/qr_img.php?d=https%3A%2F%2Fyoutu.be%2FBaw7rxlEiOg&s=4&e=m" alt="Generador de Códigos QR Codes"/>
+        <div class="icon faa-float animated"><i class="fa fa-angle-double-down"></i></div>
+      </section>
+      <!-- page 2-->
+      <section id="page2">
+        <div class="content">
+          <div class="container clearfix">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="heading">Sobre mí</h2>
+                <p>Mi nombre es Alex Gómez Uceda. Vivo en un pueblo de Toledo (España) y soy graduado en Ingeniería del Software por la Universidad Rey Juan Carlos desde el año 2018.</p>
+                <p>Me considero una persona trabajadora, tranquila y familiar. La tecnología y el deporte son mis dos grandes pasiones. Pienso que la vida es un continuo aprendizaje y nunca hay que dejar de aprender.</p>
+                <p>Si aún deseas saber más sobre mí, puedes hacerlo en el último apartado.</p>
+              </div>
+              <div class="col-md-5 col-md-offset-1">
+                <p><img src="img/about.jpg" alt="" class="img-responsive img-circle"></p>
+              </div>
             </div>
-
-            <!-- Competencias -->
-            <div class="grid_8 competences">
-                <h3>Competencias</h3>
-                <ul class="barres">
-                    <li data-skills="80">Typescript<span style="width: 80%;"></span></li>
-                    <li data-skills="60">C<span style="width: 60%;"></span></li>
-                    <li data-skills="75">SQL<span style="width: 75%;"></span></li>
-                    <li data-skills="40">Javascript<span style="width: 40%;"></span></li>
-                    <li data-skills="95">Java<span style="width: 95%;"></span></li>
-                </ul>
+          </div>
+        </div>
+      </section>
+      <!-- page 3 - class section-gray adds gray background-->
+      <section id="page3" class="section-gray">
+        <div class="content">
+          <div class="container clearfix">
+            <div class="row services">
+              <div class="col-md-12">
+                <h2 class="heading">Skills</h2>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="box">
+                      <div class="icon"><i class="fab fa-java"></i></div>
+                      <h4 class="heading">Java</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="box">
+                      <div class="icon"><i class="fab fa-angular"></i></div>
+                      <h4 class="heading">Angular</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="box">
+                      <div class="icon"><i class="fab fa-html5"></i></div>
+                      <h4 class="heading">HTML</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="box">
+                      <div class="icon"><i class="fas fa-database"></i></div>
+                      <h4 class="heading">SQL & NoSQL</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="box">
+                      <div class="icon"><i class="fab fa-aws"></i></div>
+                      <h4 class="heading">Amazon Web Services</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="box">
+                      <div class="icon"><i class="fab fa-js"></i></div>
+                      <h4 class="heading">Javascript</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-
-        <!-- Experiencia-->
-        <div class="grid_16 experiences">
-            <h3>Experiencia</h3>
-            <ul>
-                <li>
-                    <h4><strong>Becario</strong> Everis</h4>
-                    <span class="lieu">Madrid</span>
-                    <span class="dates">Diciembre 2017 - Junio 2018</span>
-                </li>
-                <li>
-                    <h4><strong>Socorrista Acuático</strong> Ayuntamiento de Borox</h4>
-                    <span class="lieu">Borox (Toledo)</span>
-                    <span class="dates">Junio 2017 - Septiembre 2017</span>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Formación-->
-        <div class="grid_16 formations">
-            <h3>Formación</h3>
-            <ul>
-                <li>
-                    <h4><strong>Grado en Ingeniería del Software</strong> Universidad Rey Juan Carlos</h4>
-                    <span class="lieu">Móstoles(Madrid)</span>
-                    <span class="dates">2014-Actualidad</span>
-                </li>
-                <li>
-                    <h4><strong>Bachillerato Ciencias-Tecnológico</strong> I.E.S. "La Cañuela"</h4>
-                    <span class="lieu">Yuncos (Toledo)</span>
-                    <span class="dates">2012-2014</span>
-                </li>
-                <li>
-                    <h4><strong>Graduado de la E.S.O.</strong> I.E.S. "La Cañuela"</h4>
-                    <span class="lieu">Yuncos (Toledo)</span>
-                    <span class="dates">2008-2012</span>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Aficiones-->
-        <div class="grid_8 loisirs">
-            <h3>Aficiones</h3>
-            <p><strong>Deportes:</strong> Fútbol, ciclismo, natación y fitness.</p>
-
-        </div>
-
-        <!-- Contacto -->
-        <div class="grid_8 contact">
-            <h3>Contacto</h3>
-            <ul class="barres">
-                <li><strong>Correo electrónico:</strong><span> alexyuncos96@gmail.com</span></li>
-                <li><strong>LinkedIn:</strong><span> Alex Gómez Uceda</span></li>
-                <li><strong>GitHub:</strong> a-gomezuc<span></span></li>
-            </ul>
-        </div>
-    </section>
-    <div class="icons">
-	    <img style="border:0;width:88px;height:31px"
-	        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-             title="CSS válido"
-			 alt="CSS Válido" />
-        <img style="border:0;width:88px;height:31px" 
-             src="https://www.w3.org/Icons/valid-html401-blue"
-             title="HTML válido"
-             alt="HTML válido">
-        <img style="border:0;width:88px;height:31px" src="files/images/HeraP1.gif" title="WCAG 1.0 - Prioridad1." alt="WCAG 1.0 - Prioridad 1.">
+      </section>
+      <!-- page 6-->
+      <section id="page6">
+        <div class="content">
+          <div class="container clearfix">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="heading">Contacto</h2>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="col-md-4">
+                      <div class="text-center">
+                        <p></p>
+                        <p>Pulsa en la imagen para descargar mi currículum.</p>
+                        <a href="cv/CV.pdf" target="_blank" download><i class="fas fa-file-alt fa-9x"></i></a>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="text-center">
+                        <p></p>
+                        <p>Pulsa en la imagen para enviarme un correo electrónico.</p>
+                        <a href="mailto:alexyuncos96@gmail.com"><i class="fas fa-envelope fa-9x"></i></a>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="text-center">
+                        <p></p>
+                        <p>Pulsa en la imagen para ver mis proyectos.</p>
+                        <a href="https://github.com/a-gomezuc" target="_blank"><i class="fab fa-github fa-9x"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
     </div>
-
-    <!-- Scripts JavaScript -->
-    <script src="files/jquery-1.js"></script>
-    <script src="files/validate.js"></script>
-    <script src="files/plugins.js"></script>
-
+  </div>
+  <!-- Javascript files-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
+  </script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="js/jquery.cookie.js"></script>
+  <script src="js/jquery.onepage-scroll.js"></script>
+  <script src="js/front.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
+  <script>
+    (function(b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function() {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = '//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+  </script>
 </body>
 
 </html>
