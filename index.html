@@ -7,10 +7,11 @@
   <script>
     window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
   </script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   <script src="js/jquery.cookie.js"></script>
   <script src="js/jquery.onepage-scroll.js"></script>
   <script src="js/front.js"></script>
+  <script src="js/changeLanguage.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Alex Gómez Uceda</title>
@@ -28,7 +29,7 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- Google fonts - Montserrat for headings, Cardo for copy-->
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
   <!-- onepage scroll stylesheet-->
   <link rel="stylesheet" href="css/onepage-scroll.css">
   <!-- theme stylesheet-->
@@ -53,10 +54,12 @@
           <div class="container clearfix">
             <div class="row">
               <div class="col-md-8 col-md-offset-2 col-sm-12">
-                <p class="italic">¡Bienvenido!</p>
-                <h1>Mi nombre es Alex Gómez Uceda.</h1>
-                <p class="italic">Este es mi portfolio.</p>
-                <p class="italic">Si quieres conocer más sobre mí, sigue bajando.</p>
+                <p class="italic" id="welcome">¡Bienvenido!</p>
+                <h1 id="name">Mi nombre es Alex Gómez Uceda.</h1>
+                <p class="italic" id="portfolio">Este es mi portfolio.</p>
+                <p class="italic" id="know">Si quieres conocer más sobre mí, sigue bajando.</p>
+                <button class="btn btn-danger" id ="englishButton" onclick="changeLanguage('English')">English</button>
+                <button class="btn btn-danger" id ="spanishButton" onclick="changeLanguage('Spanish')" style="display:none">Spanish</button>
               </div>
             </div>
           </div>
@@ -69,10 +72,10 @@
           <div class="container clearfix">
             <div class="row">
               <div class="col-md-6">
-                <h2 class="heading">Sobre mí</h2>
-                <p style="text-align: justify"> Mi nombre es Alex Gómez Uceda. Vivo en un pueblo de Toledo (España) y soy graduado en Ingeniería del Software por la Universidad Rey Juan Carlos desde el año 2018.</p>
-                <p style="text-align: justify">Me considero una persona trabajadora, tranquila y familiar. La tecnología y el deporte son mis dos grandes pasiones. Pienso que la vida es un continuo aprendizaje y nunca hay que dejar de aprender.</p>
-                <p style="text-align: justify">Si aún deseas saber más sobre mí, puedes hacerlo en el último apartado.</p>
+                <h2 class="heading" id="about">Sobre mí</h2>
+                <p style="text-align: justify" id="par1">Mi nombre es Alex Gómez Uceda. Vivo en un pueblo de Toledo (España) y soy graduado en Ingeniería del Software por la Universidad Rey Juan Carlos desde el año 2018.</p>
+                <p style="text-align: justify" id="par2">Me considero una persona trabajadora, tranquila y curiosa. La tecnología y el deporte son mis dos grandes pasiones. Pienso que la vida es un continuo aprendizaje y nunca hay que dejar de aprender.</p>
+                <p style="text-align: justify" id="par3">Si aún deseas saber más sobre mí, puedes hacerlo en el último apartado.</p>
               </div>
               <div class="col-md-5 col-md-offset-1">
                 <p><img src="img/about.jpg" alt="" class="img-responsive img-circle"></p>
@@ -139,27 +142,27 @@
           <div class="container clearfix">
             <div class="row">
               <div class="col-md-12">
-                <h2 class="heading">Contacto</h2>
+                <h2 class="heading" id ="contact">Contacto</h2>
                 <div class="row">
                   <div class="col-md-12">
                     <div class="col-md-4">
                       <div class="text-center">
                         <p></p>
-                        <p>Pulsa en la imagen para descargar mi currículum.</p>
+                        <p id="cv">Pulsa en la imagen para descargar mi currículum.</p>
                         <a href="cv/CV.pdf" target="_blank" download><i class="fas fa-file-alt fa-9x"></i></a>
                       </div>
                     </div>
                     <div class="col-md-4">
                       <div class="text-center">
                         <p></p>
-                        <p>Pulsa en la imagen para enviarme un correo electrónico.</p>
+                        <p id="email">Pulsa en la imagen para enviarme un correo electrónico.</p>
                         <a href="mailto:alexyuncos96@gmail.com"><i class="fas fa-envelope fa-9x"></i></a>
                       </div>
                     </div>
                     <div class="col-md-4">
                       <div class="text-center">
                         <p></p>
-                        <p>Pulsa en la imagen para ver mis proyectos.</p>
+                        <p id="github">Pulsa en la imagen para ver mis proyectos.</p>
                         <a href="https://github.com/a-gomezuc" target="_blank"><i class="fab fa-github fa-9x"></i></a>
                       </div>
                     </div>
