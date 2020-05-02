@@ -192,10 +192,10 @@ p.social a.email {
   position: absolute;
   bottom: 40px;
   left: 50%;
-  margin-left: -20px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  margin-left: -10px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
   border: solid 2px #fff;
   border-radius: 20px;
   z-index: 3;
