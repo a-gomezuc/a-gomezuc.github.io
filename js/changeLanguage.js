@@ -1,7 +1,7 @@
 var en_US = {
   welcome: "Welcome!",
   name: "My name is Alex Gómez Uceda",
-  portfolio: "This is my portfolio",
+  portfolio: "This is my portfolio.",
   know: "If you want to know more about me, keep scrolling down.",
   about: "About me",
   par1:
