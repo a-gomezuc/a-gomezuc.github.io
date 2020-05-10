@@ -7,7 +7,7 @@ var en_US = {
   par1:
     "My name is Alex Gómez Uceda. I live in a town in Toledo (España) and I am Software Engineering from Rey Juan Carlos University since 2018.",
   par2:
-    "I consider myself a hard-work, quiet and curious person. Technology and sports are my two main passions. I think that life is a continuous learning and we should never stop to learn.",
+    "I consider myself a hard-work, quiet and curious person. Technology and sports are my two main passions. I think that life is a continuous learning and we should never stop learning.",
   par3:
     "If you still want to know more about me, you can do it in the last section.",
   contact: "Contact",
